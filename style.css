@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --primary-background: #000000;
+    --primary-text-color: #E2CCAD;
+    --glass-background: rgba(255, 255, 255, 0.1);
+    --secondary-color: #f5f5f5;
+}
+
+@font-face {
+    font-family: Text1;
+    src: url('./Text/fontawesome-webfont-261feaba0e71dad626c7bb4b15060e69.ttf');
+}
+
+@font-face {
+    font-family: Text2;
+    src: url('./Text/OpenSans-Italic-6a5fcc6cad49435713ac8a06741177f1.ttf');
+}
+
+@font-face {
+    font-family: Text3;
+    src: url('./Text/OpenSans-Light-1ae75cb9f7e916addc068e45d121ce84.ttf');
+}
+
+@font-face {
+    font-family: Text4;
+    src: url('./Text/OpenSans-Regular-d57104e349bda2b4f4cd4ff671ad9681.ttf');
+}
+
+@font-face {
+    font-family: Text5;
+    src: url('./Text/OpenSans-Semibold-00a30650c738b4daa296e0f3835cd21a.ttf');
+}
+
+html {
+    font-size: 60.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: var(--primary-background);
+    padding: 1vw 2.55vw;
+    overflow: hidden;
+}
+
+.nav-bar {
+    height: 70px;
+    width: 50%;
+    position: relative;
+    background: var(--glass-background);
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3vw .7vw;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.logo {
+    font-family: Text4;
+    font-size: clamp(.8rem,2vw, 3rem);
+    color: var(--secondary-color);
+    font-family: "Courgette", cursive;
+}
+
+.list {
+    /* background: red; */
+    width: 62%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.list li {
+    position: relative;
+}
+
+.list li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: Text4;
+    font-size: clamp(.8rem,1.22vw, 3rem);
+    text-transform: uppercase;
+}
+
+.nav-bar button {
+    background: var(--primary-text-color);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: .7vw 1.22vw;
+    font-size: clamp(.8rem, 1.2vw, 2rem);
+    font-family: "Courgette", cursive;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.back-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.22);
+    height: 100%;
+   
+}
+
+.content {
+    position: absolute;
+    bottom: 2%;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.content .heading-txt {
+    font-size: clamp(1rem, 6vw,14rem);
+    font-family: Text2;
+    color: var(--primary-text-color);
+    padding-bottom: 2vw;
+    overflow: hidden;
+}
+
+.content span {
+    display: block;
+    overflow: hidden;
+}
+
+.content span:nth-child(2) {
+   margin-left: 3vw;
+}
+
+.content .info-txt {
+    font-size: clamp(1rem, 1.5vw,3rem);
+    font-family: Text2;
+    color: var(--primary-text-color);
+    padding-bottom: 2vw;
+    padding: 0vw 5vw;
+    font-family: Text4;
+    text-transform: capitalize;
+    overflow: hidden;
+}
